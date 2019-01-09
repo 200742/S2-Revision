@@ -1,0 +1,16 @@
+import java.util.Scanner;
+public class HelloWorldAgain{
+   public static void main(String[]args){
+        System.out.println("Hello World!");
+        Scanner scan = new Scanner(System.in);
+        System.out.println("How many elements would you like to print?");
+        NumberSequence object = new NumberSequence();
+        int numElements = scan.nextInt();
+        
+        //Uncomment whichever sequence you would like to use!!
+        //System.out.println(object.FibonacciSequence(numElements));
+        //System.out.println(object.CubicSequence(numElements));
+        //System.out.println(object.TriangularSequence(numElements));
+        //System.out.println(object.SquareSequence(numElements));
+   }
+}
