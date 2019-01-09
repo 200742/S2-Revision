@@ -1,0 +1,40 @@
+import java.util.*;
+public class NumberSequence{
+  private int n;
+  ArrayList<Integer> sequence = new ArrayList<Integer>();
+  public NumberSequence(){}
+  public ArrayList FibonacciSequence(int n){
+      for(int i = 1; i<=n;i++){ 
+      if (i==1||i==2){
+          sequence.add(1);
+      }
+      else{
+          sequence.add(sequence.get(i-3)+sequence.get(i-2));
+      }
+    }
+    return sequence;
+  }
+  public ArrayList CubicSequence(int n){
+      for(int i=1;i<=n;i++){
+          sequence.add(i*i*i);
+        }
+      return sequence;
+  }
+  public ArrayList TriangularSequence(int n){
+      for(int i = 1;i<=n;i++){
+          if(i==1){
+              sequence.add(1);
+          }
+          else{
+              sequence.add(sequence.get(i-2)+i);
+          }
+      }
+      return sequence;
+  }
+  public ArrayList SquareSequence(int n){
+      for(int i=1;i<=n;i++){
+          sequence.add(i*i);
+        }
+      return sequence;
+  }
+}
